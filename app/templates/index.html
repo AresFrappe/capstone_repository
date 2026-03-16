@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capstone Repository</title>
+    </head>
+
+    <body>
+
+        <h1>Capstone Repository</h1>
+
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Capstone Title">
+            <input type="text" name="author" placeholder="Author">
+            <button type="submit">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Capstone List</h2>
+
+        <ul>
+            {% for capstone in capstones %}
+            <li>{{ capstone.title }} - {{ capstone.author }}</li>
+            {% endfor %}
+        </ul>
+    
+    </body>
+</html>
