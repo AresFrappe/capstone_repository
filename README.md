@@ -20,7 +20,7 @@ venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
 # 5. Create .env file
-# inside .env file put:
+inside .env file put:
 MONGO_URI = mongodb://localhost:27017/database_name
 
 # 6. Run the app
