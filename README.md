@@ -19,10 +19,14 @@ venv\Scripts\Activate.ps1
 # 4. Install dependencies
 pip install -r requirements.txt
 
-# 5. Run the app
+# 5. Create .env file
+# inside .env file put:
+MONGO_URI = mongodb://localhost:27017/database_name
+
+# 6. Run the app
 flask run
 or
 python run.py
 
-# 6. When done, deactivate environment
+# 7. When done, deactivate environment
 deactivate
