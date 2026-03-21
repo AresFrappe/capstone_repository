@@ -5,14 +5,16 @@ main = Blueprint("main", __name__)
 
 @main.route("/")
 def home():
-
     capstones = mongo.db.capstones.find()
+    return render_template("index.html", capstones=capstones)
 
-    return render_template(
-        "index.html",
-        capstones=capstones
-    )
+@main.route("/admin")
+def admin_dashboard():
+    return render_template("admin/dashboard.html")
 
+@main.route("/login")
+def login():
+    return render_template("auth/login.html")
 
 @main.route("/add", methods=["POST"])
 def add_capstone():
