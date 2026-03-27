@@ -7,8 +7,6 @@ cd repository
 python -m venv venv
 
 # 3. Activate virtual environment (run in terminal)
-# Mac/Linux
-source venv/bin/activate
 # Windows (CMD)
 venv\Scripts\activate
 # Windows (PowerShell)
