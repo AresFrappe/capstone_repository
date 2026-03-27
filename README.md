@@ -9,8 +9,6 @@ python3 -m venv venv
 python -m venv venv
 
 # 3. Activate virtual environment (run in terminal)
-# Mac/Linux
-source venv/bin/activate
 # Windows (CMD)
 venv\Scripts\activate
 # Windows (PowerShell)
@@ -21,7 +19,7 @@ pip install -r requirements.txt
 
 # 5. Create .env file
 inside .env file put:
-MONGO_URI = mongodb://localhost:27017/database_name
+MONGO_URI = mongodb://localhost:27017/collectioin_name
 
 # 6. Run the app
 flask run
